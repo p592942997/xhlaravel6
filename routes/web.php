@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('first/{id?}',function($id=0){
+    return 'hello world-' . $id;
+});
